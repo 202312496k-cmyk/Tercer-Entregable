@@ -1,0 +1,817 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #a876fd;
+    animation: fadeIn 1s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+/* =====================================
+   ANIMACIÓN
+===================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #0d1b2a;
+
+    padding: 0 40px;
+
+    height: 70px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+}
+
+.logo img {
+
+    height: 45px;
+}
+
+.menu {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+
+    background: #00b4d8;
+
+    transform: scale(1.1);
+}
+
+/* =====================================
+   PRINCIPAL
+===================================== */
+
+.principal {
+
+    display: flex;
+
+    gap: 40px;
+
+    padding: 60px;
+
+    background: linear-gradient(120deg, #a876fd, #00b4d8);
+
+    color: white;
+
+    border-radius: 0 0 30px 30px;
+}
+
+.principal h1 {
+
+    font-size: 40px;
+}
+
+.btn {
+
+    background: #00b4d8;
+
+    padding: 10px 15px;
+
+    color: white;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+
+    transform: scale(1.1);
+
+    background: #0077b6;
+}
+
+/* =====================================
+   CARRUSEL
+===================================== */
+
+.carrusel-posters {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+}
+
+.posters-container {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.poster {
+
+    width: 90px;
+
+    height: 300px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.poster img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.poster.active {
+
+    width: 320px;
+
+    transform: scale(1.05);
+}
+
+/* =====================================
+   TÍTULOS
+===================================== */
+
+h2 {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+.titulo-galeria {
+
+    text-align: center;
+
+    color: #0d4d7a;
+
+    margin-top: 10px;
+
+    font-size: 40px;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 40px;
+
+    justify-content: center;
+}
+
+.card {
+
+    width: 200px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    background: linear-gradient(135deg, #00b4d8, #a876fd);
+
+    color: white;
+}
+
+.card button {
+
+    background: #00b4d8;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   GRID
+===================================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 25px;
+
+    padding: 40px;
+
+    justify-items: center;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+
+    background: #111;
+
+    padding: 40px;
+
+    color: white;
+
+    border-top-left-radius: 30px;
+
+    border-top-right-radius: 30px;
+}
+
+.footer-contenedor {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+
+    color: #00b4d8;
+}
+
+/* =====================================
+   REDES
+===================================== */
+
+.redes a {
+
+    font-size: 20px;
+
+    margin-right: 10px;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+
+    color: #00b4d8;
+}
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  right: 25px;
+  bottom: 25px;
+  background: #2587d3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.30);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.40);
+}
+
+.whatsapp img {
+  width: 38px;
+  height: 38px;
+}
+
+/* EFECTO DE PULSO */
+.whatsapp::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: rgba(188, 211, 37, 0.45);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulso 1.6s infinite;
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+/* =====================================
+   GALERÍA INTERACTIVA
+===================================== */
+
+.contenedor-galeria {
+
+    width: 85%;
+
+    max-width: 950px;
+
+    margin: 35px auto;
+
+    background: #ececec;
+
+    padding: 30px;
+
+    border-radius: 35px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+
+    text-align: center;
+}
+
+/* TARJETA */
+
+.tarjeta {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* IMAGEN */
+
+.tarjeta img {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition:
+    transform 1s ease,
+    opacity 1s ease,
+    box-shadow 1s ease;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* EFECTO HOVER */
+
+.tarjeta img:hover {
+
+    transform: scale(1.02);
+
+    opacity: 0.96;
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+}
+
+/* =====================================
+   BOTÓN VOLVER
+===================================== */
+
+.contenedor-volver {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 35px;
+
+    margin-bottom: 10px;
+}
+
+.volver {
+
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background: linear-gradient(135deg, #2bbbd8, #1481a8);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.5s;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.volver:hover {
+
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #1593b2, #075f87);
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:1000px){
+
+    .grid {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .poster.active {
+
+        width: 240px;
+    }
+
+    .poster {
+
+        height: 220px;
+    }
+
+    .tarjeta img {
+
+        height: 320px;
+    }
+
+    .contenedor-galeria {
+
+        padding: 25px;
+    }
+}
+
+@media(max-width:600px){
+
+    .grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .tarjeta img {
+
+        height: 220px;
+    }
+
+    .titulo-galeria {
+
+        font-size: 28px;
+    }
+
+    .contenedor-galeria {
+
+        width: 92%;
+
+        padding: 15px;
+    }
+
+    .volver {
+
+        padding: 12px 25px;
+
+        font-size: 16px;
+    }
+}
+/* =====================================
+   TARJETAS DE FRUTAS IGUALES
+===================================== */
+
+.grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.grid .card {
+
+    width: 200px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.grid .card:hover {
+
+    transform: translateY(-10px);
+
+    background: linear-gradient(135deg, #00b4d8, #a876fd);
+
+    color: white;
+}
+
+.grid .card img {
+
+    width: 100%;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    transition: 0.5s ease;
+}
+
+.grid .card img:hover {
+
+    transform: scale(1.05);
+}
+
+.grid .card h3 {
+
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .grid {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.contenedor-contacto {
+
+    width: 55%;
+    max-width: 380px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(135deg, #4ea8ff, #a020f0);
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.contenedor-contacto h1 {
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.contenedor-contacto form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contenedor-contacto input,
+.contenedor-contacto textarea,
+.contenedor-contacto select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: black;
+
+    color: white;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.contenedor-contacto textarea {
+
+    height: 100px;
+
+    resize: none;
+}
+
+.contenedor-contacto input::placeholder,
+.contenedor-contacto textarea::placeholder {
+
+    color: #999;
+}
+
+.contenedor-contacto select {
+
+    color: #999;
+}
+
+.contenedor-contacto button {
+
+    padding: 12px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #16e0e0;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contenedor-contacto button:hover {
+
+    transform: scale(1.03);
+
+    background: #00c4cc;
+}
+
+.contenedor-contacto .volver {
+
+    margin-top: 20px;
+
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    .contenedor-contacto {
+
+        width: 85%;
+    }
+
+    .contenedor-contacto h1 {
+
+        font-size: 26px;
+    }
+}

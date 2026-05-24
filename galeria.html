@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Galería Interactiva</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- GALERÍA -->
+
+    <div class="contenedor-galeria">
+
+        <h1 class="titulo-galeria">
+
+            Galería Interactiva
+
+        </h1>
+
+        <div class="tarjeta">
+
+            <img
+            id="imagen"
+
+            src="imagenes/galeria1.webp"
+
+            alt="Galería"
+
+            onmouseover="iniciarGaleria()"
+
+            onmouseout="detenerGaleria()"
+            >
+
+        </div>
+
+        <!-- BOTÓN -->
+
+        <div class="contenedor-volver">
+
+            <a href="index.html" class="volver">
+
+                Volver
+
+            </a>
+
+        </div>
+
+    </div>
+
+<script src="scriptgaleria.js"></script>
+
+</body>
+</html>
